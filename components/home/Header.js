@@ -19,7 +19,6 @@ const Header = () => {
             width: 100,
             height: 50,
             resizeMode: "contain",
-            color: "white",
           }}
           source={require("../../assets/ig3.jpg")}
         />
