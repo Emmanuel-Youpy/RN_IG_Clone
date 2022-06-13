@@ -4,6 +4,7 @@ import Header from "../components/home/Header";
 import Stories from "../components/home/Stories";
 import Post from "../components/home/Post";
 import { POSTS } from "../data/post";
+import BottomTab, { bottomTabsIcons } from "../components/BottomTab";
 
 const HomeScreen = () => {
   return (
@@ -18,6 +19,7 @@ const HomeScreen = () => {
             </>
           ))}
         </ScrollView>
+        <BottomTab icons={bottomTabsIcons} />
       </View>
     </View>
   );

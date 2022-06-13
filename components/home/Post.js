@@ -15,6 +15,7 @@ const Post = ({ post }) => {
       <Likes post={post} />
       <Caption post={post} />
       <CommentSection post={post} />
+      <Comments post={post} />
     </View>
   );
 };
@@ -65,6 +66,25 @@ const PostFooter = () => {
           />
         </TouchableOpacity>
       </View>
+    </View>
+  );
+};
+
+// Comments
+const Comments = ({ post }) => {
+  return (
+    <View>
+      {post.comments.map((comment, index) => (
+        <View
+          key={index}
+          style={{ flexDirection: "row", marginTop: 5, marginLeft: 17 }}
+        >
+          <Text style={{ color: "white" }}>
+            <Text style={{ fontWeight: "bold" }}>{comment.user} </Text>
+            {comment.comment}
+          </Text>
+        </View>
+      ))}
     </View>
   );
 };
