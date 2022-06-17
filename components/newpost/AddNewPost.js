@@ -1,12 +1,13 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
+import FormikPostUploader from "./FormikPostUploader";
 
 const AddNewPost = () => {
   return (
     <View style={{ marginHorizontal: 10 }}>
       <Header />
-      {/* Post form */}
+      <FormikPostUploader />
     </View>
   );
 };
